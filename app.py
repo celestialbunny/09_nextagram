@@ -30,6 +30,11 @@ def multiply(num1, num2):
 def show(username):
 	return render_template('username.html', username=username)
 
+@app.route('/contact')
+def contact():
+	signed_in = True
+	return render_template('contact.html', signed_in=signed_in)
+
 if __name__ == '__main__':
 	# models.initialize()
 	app.run(debug=DEBUG, host=HOST, port=PORT)
