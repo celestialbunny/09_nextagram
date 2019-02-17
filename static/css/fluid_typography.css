@@ -1,0 +1,17 @@
+html {
+	font-size: calc(1em + 1vw);
+} 
+
+/* setting the max width*/
+ @media screen and (min-width: 50em) {
+	html {
+		font-size: 1.5em;
+	}
+} 
+body {
+	padding: 1em;
+}
+p {
+	line-height: 1.5rem;
+	text-align: justify;
+}
